@@ -1,0 +1,37 @@
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+    a{
+        border-radius: 0;
+        text-transform: none;
+        width: 100%;
+        max-width: 180px;
+        height: 100%;
+        max-height: 80px;
+        font-weight: 600;
+        font-size: 18px;
+        &:hover{
+            border: none;
+            color: white;
+        }
+    }
+    .snake{
+        background-color: #fa163f;
+        color: white;
+        
+        &:hover{
+            background-color: #f84263;
+        }
+    }
+    .portfolio{
+        border: 2px solid #fa163f;
+        color: #0c0c0c;
+        &:hover{
+            background-color: #f84263;
+        }
+    }
+}
