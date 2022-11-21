@@ -1,0 +1,14 @@
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover ;
+    .arrow{
+        max-width: 35px;
+        margin-bottom: 50px;
+    }
+}

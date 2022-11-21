@@ -1,11 +1,15 @@
-import React from "react";
 import Navbar from "../../components/navbar/Navbar";
+import { motion } from "framer-motion";
 
-export default function HomePage() {
+export default function About() {
   return (
-    <div>
-      <Navbar></Navbar>
-      <h1>About me</h1>
-    </div>
+    <motion.div
+      initial={{ opacity: 0.1, scale: 0.4 }}
+      animate={{ opacity: 1, scale: 1 }}
+      transition={{ duration: 0.3 }}
+    >
+      <Navbar />
+      <h1>About medwdw</h1>
+    </motion.div>
   );
 }

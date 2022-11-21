@@ -1,6 +1,6 @@
 import React from "react";
 import classes from "./Navbar.module.scss";
-import Logo from "../../static/Logodamjan-01.svg";
+import Logo from "../../static/Logodamjan.svg";
 import { NavLink, useLocation } from "react-router-dom";
 
 export default function Navbar() {
