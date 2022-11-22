@@ -1,0 +1,27 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  Button {
+    border-radius: 0;
+    text-transform: none;
+    width: 100%;
+    margin-top: 20px;
+    height: 100%;
+    max-height: 40px;
+    font-weight: 600;
+    font-size: 15px;
+    background-color: #fa163f;
+    color: white;
+    &:hover {
+      background-color: transparent;
+      outline: 3px solid #fa163f;
+      color: #0c0c0c;
+    }
+    &:disabled{
+      background-color:#eb7f93;
+    }
+  }
+}

@@ -17,6 +17,7 @@ export default function Navbar() {
         {pages.map((page) => {
           return (
             <NavLink
+            key = {page}
               to={`/${page}`}
               className={
                 splitLocationName[1] === page ? classes.active : classes.link
