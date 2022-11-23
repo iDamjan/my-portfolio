@@ -11,3 +11,8 @@ export interface inputTouchedStateTypes {
   subject: boolean;
   message: boolean;
 }
+
+export interface Props {
+  setOpen:(value:boolean) => void;
+  setEmailSentMessage:(value: boolean) => void;
+}

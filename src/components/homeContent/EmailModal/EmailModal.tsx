@@ -18,9 +18,12 @@ const style = {
 interface Props {
   open: boolean;
   handleClose: () => void;
+  setOpen: (value:boolean) => void;
+  setEmailSentMessage: (value: boolean) => void;
+
 }
 
-export default function EmailModal({ open, handleClose }: Props) {
+export default function EmailModal({ open, handleClose, setOpen, setEmailSentMessage }: Props) {
   const MotionBox = motion(Box);
 
   return (
@@ -37,7 +40,7 @@ export default function EmailModal({ open, handleClose }: Props) {
         exit={{ x: 0, opacity: 0 }}
         sx={style}
       >
-        <EmailModalForm />
+        <EmailModalForm setOpen = {setOpen} setEmailSentMessage = {setEmailSentMessage} />
       </MotionBox>
     </Modal>
   );
