@@ -5,24 +5,11 @@ import EmailIcon from "../../../static/email-icon.svg";
 import ArrowFunction from "../../../static/arrow-function-hire.svg";
 import Alert from "@mui/material/Alert";
 import { useState } from "react";
+// @ts-ignore
+import cv from "../../../static/cv-damjan-stojanovski.pdf";
 
 const MainContent = () => {
   const [copySuccess, setCopySuccess] = useState<boolean>(false);
-
-  const downloadCvHandler = () => {
-    // using Java Script method to get PDF file
-    fetch("cv-damjan-stojanovski.pdf").then((response) => {
-      response.blob().then((blob) => {
-        // Creating new object of PDF file
-        const fileURL = window.URL.createObjectURL(blob);
-        // Setting various property values
-        let alink = document.createElement("a");
-        alink.href = fileURL;
-        alink.download = "cv-damjan-stojanovski.pdf";
-        alink.click();
-      });
-    });
-  };
 
   const copyNumberHandler = () => {
     const number = "+38972307766";
@@ -75,13 +62,11 @@ const MainContent = () => {
           with new ideas.
         </p>
         <div className={classes.flex}>
-          <Button
-            onClick={downloadCvHandler}
-            className={classes.button}
-            variant="contained"
-          >
-            Download CV
-          </Button>
+          <a href={cv} download>
+            <Button className={classes.button} variant="contained">
+              Download CV
+            </Button>
+          </a>
           <div className={classes.contactContainer}>
             <div onClick={copyNumberHandler} className={classes.contact}>
               <img src={PhoneIcon} alt="phone icon" />

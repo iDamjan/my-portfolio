@@ -5,20 +5,27 @@ import CloseHtmlTag from "../../static/CloseHtmlTag.svg";
 import EmailModal from "./EmailModal/EmailModal";
 import { useState } from "react";
 import Alert from "@mui/material/Alert";
+import {PopupMessage} from './types'
+
 
 export default function MainContent() {
   const [open, setOpen] = useState(false);
-  const [emailSentMessage, setEmailSentMessage] = useState(false);
+
+  const [popupMessage, setPopupMessage] = useState<PopupMessage>({
+    message: "",
+    messageSuccess: false,
+    severity: ""
+  })
 
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
 
   return (
     <>
-      {emailSentMessage && <Alert severity="success">Email Sent!</Alert>}
+      {popupMessage.messageSuccess && <Alert severity={popupMessage.severity}>{popupMessage.message}</Alert>}
       <div className={classes.container}>
         <EmailModal
-          setEmailSentMessage={setEmailSentMessage}
+          setPopupMessage={setPopupMessage}
           open={open}
           setOpen={setOpen}
           handleClose={handleClose}
@@ -40,6 +47,7 @@ export default function MainContent() {
           src={CloseHtmlTag}
           alt="Close Html Tag"
         />
+        
       </div>
     </>
   );

@@ -3,6 +3,7 @@ import Navbar from "../../components/navbar/Navbar";
 import classes from "./HomePage.module.scss";
 import HomeBackground from "../../static/Background.jpg";
 import { motion } from "framer-motion";
+import { ContactIcons } from "../../components/homeContent/contact-icons/ContactIcons";
 
 export default function HomePage() {
 
@@ -17,7 +18,7 @@ export default function HomePage() {
     >
       <Navbar />
       <MainContent />
-      
+      <ContactIcons />
     </motion.div>
   );
 }

@@ -3,12 +3,12 @@ import classes from "./EmailModalForm.module.scss";
 import Button from "@mui/material/Button";
 import { useState, useRef } from "react";
 import { invalidEmail, invalidTextInput } from "./validators";
-import { inputTypes, inputTouchedStateTypes, Props } from "./types";
+import { inputTypes, inputTouchedStateTypes, Props } from "../types";
 import emailjs from "@emailjs/browser";
 import CircularProgress from "@mui/material/CircularProgress";
 import Box from "@mui/material/Box";
 
-const EmailModalForm = ({ setOpen, setEmailSentMessage }: Props) => {
+const EmailModalForm = ({ setOpen, setPopupMessage }: Props) => {
   const form: any = useRef();
 
   const [isLoading, setIsLoading] = useState(false);
@@ -35,19 +35,40 @@ const EmailModalForm = ({ setOpen, setEmailSentMessage }: Props) => {
         "service_n9811ig",
         "template_nmlhgft",
         form.current,
-        "zt3u6WoRZnKm_ao94"
+        "ftENecgYGZY3YbPcY"
       )
       .then(
         () => {
           setOpen(false);
-          setEmailSentMessage(true);
+          setPopupMessage({
+            message: "Email sent!",
+            messageSuccess: true,
+            severity: "success",
+          });
           setTimeout(() => {
-            setEmailSentMessage(false);
+            setPopupMessage({
+              message: "Email sent!",
+              messageSuccess: false,
+              severity: "success",
+            });
           }, 1500);
           setIsLoading(false);
         },
         (error) => {
-          alert("Can not send email, please try again" + error.text);
+          console.log(error + "please try again");
+          setOpen(false);
+          setPopupMessage({
+            message: "Something went wrong, please try again",
+            messageSuccess: true,
+            severity: "error",
+          });
+          setTimeout(() => {
+            setPopupMessage({
+              message: "",
+              messageSuccess: false,
+              severity: "",
+            });
+          }, 1500);
         }
       );
   };
