@@ -5,6 +5,8 @@ import EmailIcon from "../../../static/email-icon.svg";
 import ArrowFunction from "../../../static/arrow-function-hire.svg";
 import Alert from "@mui/material/Alert";
 import { useState } from "react";
+import ImageDamjan from "../../../static/me-icon.png";
+import { motion } from "framer-motion";
 // @ts-ignore
 import cv from "../../../static/cv-damjan-stojanovski.pdf";
 
@@ -41,10 +43,20 @@ const MainContent = () => {
   };
 
   return (
-    <>
+    <motion.div
+      initial={{ opacity: 0.1, x: 1000 }}
+      animate={{ opacity: 1, x: 0 }}
+      transition={{ duration: 0.3 }}
+      className={classes.main}
+    >
       {copySuccess && (
         <Alert severity="success">Copying to clipboard succsesfull</Alert>
       )}
+       <img
+            className={classes.personalImage}
+            src={ImageDamjan}
+            alt="Damjan"
+          />
       <div className={classes.container}>
         <div className={classes.heading}>
           <h1>About</h1>
@@ -53,15 +65,20 @@ const MainContent = () => {
           Junior Frontend <span>Web Developer</span>
         </h3>
         <p>
-          Hi! My name is Damjan Stojanovski. I am a front-end web developer who
-          is very enthusiastic about REACT, Javascript, typescript, and CSS. I
-          have a lot of experience with these technologies and I am always
-          looking to improve my skills. I am a quick learner and I am always
-          willing to try new things. I am a team player and I am always looking
-          to help others. I am also a very creative person and I love to come up
-          with new ideas.
+          Passionate junior front-end developer with a desire to learn and grow
+          in a collaborative team environment. 
+          I've always loved working with technology and so over time I've developed a wide variety of skills.
+          Primarily focused on web development and practical knowledge of other
+          technologies, practices, and principles. As a hardworking professional
+          and a cheerful teammate, I believe that a good working atmosphere is a
+          key to a motivated and successful team. My biggest strength is my
+          ability to learn and adapt quickly to new roles. Currently, my work
+          mainly is focused on working with Javascript, ReactJS, Typescript,
+          HTML & CSS, and SASS.
         </p>
         <div className={classes.flex}>
+         
+         
           <a href={cv} download>
             <Button className={classes.button} variant="contained">
               Download CV
@@ -82,7 +99,7 @@ const MainContent = () => {
         </div>
         <img src={ArrowFunction} alt="Arrow function quote" />
       </div>
-    </>
+    </motion.div>
   );
 };
 

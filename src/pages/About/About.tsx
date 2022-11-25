@@ -6,15 +6,12 @@ import MainContent from "../../components/about-me-content/main-content/MainCont
 
 export default function About() {
   return (
-    <motion.div
+    <div
       style={{ backgroundImage: `url(${AboutMeBackground})` }}
-      initial={{ opacity: 0.1, scale: 0.4 }}
-      animate={{ opacity: 1, scale: 1 }}
-      transition={{ duration: 0.3 }}
       className={classes.container}
     >
       <Navbar />
       <MainContent />
-    </motion.div>
+    </div>
   );
 }

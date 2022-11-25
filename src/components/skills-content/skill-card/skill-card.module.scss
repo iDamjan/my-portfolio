@@ -1,0 +1,44 @@
+.container {
+  background-color: #0c0c0c;
+  position: relative;
+  width: 100%;
+  max-width: 350px;
+  min-width: none;
+  height: 100%;
+  max-height: 200px;
+  border-left: 5px solid #fa163f ;
+  padding: 30px 60px;
+  flex-shrink: 2;
+  &:hover{
+    cursor:zoom-in;
+  }
+  h4{
+    color:#fa163f;
+    margin-bottom: 5px;
+  }
+  h3{
+    color: white;
+    margin-bottom: 5px;
+  }
+  p {
+    color: white;
+  }
+  .tag {
+    position: absolute;
+    background-color: #fa163f;
+    width: 100%;
+    max-width: 50px;
+    height: 42px;
+    left: -15px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img{
+        width: 100%;
+        max-width: 35px;
+
+    }
+  }
+}
+

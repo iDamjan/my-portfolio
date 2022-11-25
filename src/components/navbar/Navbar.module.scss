@@ -6,12 +6,16 @@
   align-items: center;
   height: 130px;
   padding: 0 100px;
+  margin-bottom: 20px;
   img {
     width: 100%;
     height: 100%;
     max-width: 70px;
     max-height: 70px;
     margin-right: 100px;
+    &:hover{
+      cursor: pointer;
+    }
   }
 
   .navigation {

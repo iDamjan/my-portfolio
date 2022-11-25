@@ -1,14 +1,17 @@
 import Navbar from "../../components/navbar/Navbar";
-import { motion } from "framer-motion";
+import SkillsBackground from '../../static/background-skills.png'
+import classes from './Skills.module.scss'
+import { MainContent } from "../../components/skills-content/main-content/MainContent";
 
 export default function Skills() {
   return (
-    <motion.div
-    initial={{ opacity: 0.1, scale: 0.4 }}
-    animate={{ opacity: 1, scale: 1 }}
-    transition={{ duration: 0.3 }}>
+    <div
+    className={classes.container}
+      style={{ backgroundImage: `url(${SkillsBackground})` }}
+    
+    >
       <Navbar />
-      <h1>Skills</h1>
-    </motion.div>
+      <MainContent />
+    </div>
   );
 }
