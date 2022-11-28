@@ -6,20 +6,23 @@ import About from "../pages/About/About";
 import Projects from "../pages/Projects/Projects";
 import { AnimatePresence } from "framer-motion";
 import Skills from "../pages/skills/Skills";
+import Navbar from "../components/navbar/Navbar";
 
 export const AnimatedRoutes = () => {
   const location = useLocation();
 
   return (
     <AnimatePresence>
+      {location.pathname === ("/intro" || "/snakeGame") ? "" : <Navbar />}
+
       <Routes location={location} key={location.pathname}>
-        <Route path="*" element={<Navigate to="/Intro" />} />
-        <Route path="/Intro" element={<IntroPage />} />
+        <Route path="*" element={<Navigate to="/intro" />} />
+        <Route path="/intro" element={<IntroPage />} />
         <Route path="/snakeGame" element={<SnakeGame />} />
-        <Route path="/Home" element={<HomePage />} />
-        <Route path="/About" element={<About />} />
-        <Route path="/Skills" element={<Skills />} />
-        <Route path="/Projects" element={<Projects />} />
+        <Route path="/home" element={<HomePage />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/skills" element={<Skills />} />
+        <Route path="/projects" element={<Projects />} />
       </Routes>
     </AnimatePresence>
   );

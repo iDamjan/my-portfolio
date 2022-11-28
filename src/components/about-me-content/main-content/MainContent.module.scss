@@ -4,7 +4,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 65px;
+  margin-top: 25px;
   .container {
     max-width: 700px;
     margin-left: 32px;
@@ -52,13 +52,13 @@
     .contactContainer {
       display: flex;
       align-items: center;
+      
       gap: 32px;
       margin: 32px 0px;
       width: 100%;
 
       .contact {
         width: 100%;
-
         padding: 10px;
         height: 100px;
         background-color: #e5e5e5;
@@ -93,4 +93,25 @@
 .alert{
   position: absolute;
   top: 15%;
+}
+
+@media (max-width: 50em){
+
+  .main{
+    text-align: center;
+    .container{
+      margin: 0 32px;
+    }
+    .heading{
+      padding: 0;
+    }
+  }
+.flex{
+  .contactContainer{
+    flex-direction: column;
+  }
+}
+  .personalImage{
+    display: none;
+  }
 }

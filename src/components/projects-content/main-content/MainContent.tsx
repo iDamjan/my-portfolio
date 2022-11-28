@@ -8,12 +8,13 @@ export const MainContent = () => {
       {projectData.map((project) => {
         return (
           <ProjectCard
+            key={project.title}
             title={project.title}
             content={project.content}
             github={project.GitHub}
             image={project.image}
             webpage={project.WebPage}
-            mobile = {project.mobile}
+            mobile={project.mobile}
           />
         );
       })}

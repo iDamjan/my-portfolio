@@ -8,7 +8,7 @@ export default function BasicButtons() {
   const navigate = useNavigate();
 
   const goToHome = () => {
-    navigate("/Home");
+    navigate("/home");
   };
   const goToSnake = () => {
     navigate("/snakeGame");

@@ -8,8 +8,8 @@ import { motion } from "framer-motion";
 export const MainContent = () => {
   return (
     <motion.div
-      initial={{ opacity: 0.1 }}
-      animate={{ opacity: 1 }}
+      initial={{ opacity: 0.1, scale:0.5 }}
+      animate={{ opacity: 1, scale:1 }}
       transition={{ duration: 0.3 }}
       className={classes.container}
     >

@@ -24,6 +24,7 @@ export default function MainContent() {
     <>
       {popupMessage.messageSuccess && <Alert severity={popupMessage.severity}>{popupMessage.message}</Alert>}
       <div className={classes.container}>
+        
         <EmailModal
           setPopupMessage={setPopupMessage}
           open={open}
