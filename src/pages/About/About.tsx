@@ -1,5 +1,4 @@
 import Navbar from "../../components/navbar/Navbar";
-import { motion } from "framer-motion";
 import AboutMeBackground from "../../static/Background-about-me.jpg";
 import classes from "./About.module.scss";
 import MainContent from "../../components/about-me-content/main-content/MainContent";

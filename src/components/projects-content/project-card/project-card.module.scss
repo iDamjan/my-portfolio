@@ -1,0 +1,28 @@
+.container {
+  font-family: "Rubik", sans-serif;
+  font-weight: 800;
+  .actions {
+    padding-top: 0;
+    a {
+      text-decoration: none;
+      width: 100%;
+      max-width: 100px;
+      Button {
+        background-color: #fa163f;
+        color: white;
+        border-radius: unset;
+        text-transform: none;
+        font-weight: 600;
+        width: 100%;
+      
+      }
+    }
+  }
+  .mobile {
+    display: flex;
+    align-items: center;
+    svg {
+      margin-left: 5px;
+    }
+  }
+}
