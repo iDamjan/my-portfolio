@@ -1,0 +1,13 @@
+.modal{
+    display: grid;
+    place-items: center;
+    place-content: center;
+    
+}
+
+@media (max-width:30em){
+    .modal{
+        max-width: 350px;
+        margin-left: 5%;
+    }
+}

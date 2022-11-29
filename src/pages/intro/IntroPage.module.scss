@@ -3,8 +3,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: row;
   height: 100vh;
-  
+  overflow: hidden;
 
   Button {
     border-radius: 0;
@@ -20,6 +21,7 @@
       color: white;
     }
   }
+
   .snake {
     background-color: #fa163f;
     color: white;
@@ -36,3 +38,4 @@
     }
   }
 }
+

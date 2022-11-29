@@ -7,13 +7,16 @@ import Projects from "../pages/Projects/Projects";
 import { AnimatePresence } from "framer-motion";
 import Skills from "../pages/skills/Skills";
 import Navbar from "../components/navbar/Navbar";
+import { useShowNavbar } from "../hooks/useShowNavbar";
 
 export const AnimatedRoutes = () => {
+
   const location = useLocation();
+  const {showNav} = useShowNavbar();
 
   return (
     <AnimatePresence>
-      {location.pathname === ("/intro" || "/snakeGame") ? "" : <Navbar />}
+      {showNav && <Navbar />}
 
       <Routes location={location} key={location.pathname}>
         <Route path="*" element={<Navigate to="/intro" />} />

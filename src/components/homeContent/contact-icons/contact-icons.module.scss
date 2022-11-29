@@ -1,21 +1,32 @@
-.container{
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    align-items: center;
-    position: absolute;
-    
-    
-    height: 200px;
-    bottom: 0;
-    right: 0;
-    margin-right: 30px;
-    margin-bottom: 30px;
-    a{
-        text-decoration: none;
-        img{
-             width: 33px;
-             height: 33px;
-        }
+.container {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  height: 200px;
+  bottom: 0;
+  right: 0;
+  margin-right: 30px;
+  margin-bottom: 30px;
+  a {
+    text-decoration: none;
+    img {
+      width: 33px;
+      height: 33px;
+    }
+  }
+}
+
+
+@media (max-width:40em) {
+    .container{
+        flex-direction: row;
+        justify-content: space-around;
+        height: 30px;
+        position: relative;
+        margin-right: 0;
+        width: 200px;
+        margin-bottom: 0;
     }
 }

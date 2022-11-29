@@ -4,6 +4,7 @@ import Food from "../../components/snake/food";
 import classes from "./SnakeGame.module.scss";
 import Button from "@mui/material/Button";
 import Modal from '../../components/snake/GameOverModal'
+import { MobileNavigation } from "./MobileNavigation";
 
 const getRandomCoordinates = () => {
   let min = 1;
@@ -15,7 +16,7 @@ const getRandomCoordinates = () => {
 
 const initialState = {
   food: getRandomCoordinates(),
-  speed: 200,
+  speed: 100,
   direction: "RIGHT",
   snakeDots: [
     [0, 0],
@@ -123,13 +124,13 @@ class SnakeGame extends Component {
   increaseSpeed() {
     if (this.state.speed > 10) {
       this.setState({
-        speed: this.state.speed - 10,
+        speed: this.state.speed - 20,
       });
     }
   }
 
   onGameOver() {
-    alert(`Game Over. Sjaca ${this.state.snakeDots.length}`);
+    alert(`Game Over. Try Again `);
     // <Modal snakeLength = {this.state.snakeDots.length}></Modal>
     this.setState(initialState);
   }
@@ -141,7 +142,8 @@ class SnakeGame extends Component {
           <Snake snakeDots={this.state.snakeDots} />
           <Food dot={this.state.food} />
         </div>
-        <Button href="/Home" className={classes.snake} variant="outlined">
+        <MobileNavigation / >
+        <Button href="/home" className={classes.goToPortfolio} variant="outlined">
           Go to Portfolio
         </Button>
       </div>

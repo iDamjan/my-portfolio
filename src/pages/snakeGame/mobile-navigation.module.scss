@@ -1,0 +1,28 @@
+.container{
+display: none;
+}
+
+@media(max-width:40em) {
+    .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100px;
+        height: 100px;
+        svg{
+            width: 60px;
+            height: 60px;
+            path{
+                width: 100%;
+            }
+            
+        }
+        .groupTwo{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: row;
+        }
+    }
+}

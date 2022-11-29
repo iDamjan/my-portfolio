@@ -14,8 +14,8 @@ export default function HomePage() {
       animate={{ opacity: 1, scale: 1}}
       transition={{ duration: 0.3 }}
     >
-      <MainContent />
       <ContactIcons />
+      <MainContent />
     </motion.div>
   );
 }

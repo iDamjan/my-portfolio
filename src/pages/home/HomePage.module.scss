@@ -1,11 +1,22 @@
-.container{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: column;
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  overflow: hidden;
+ 
+}
+
+@media (max-width: 40em) {
+  .container {
+    background-image: url("../../static//home-background-mobile.png");
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size:cover ;
-    
+    background-size: cover;
+  }
 }

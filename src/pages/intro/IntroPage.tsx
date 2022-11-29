@@ -17,7 +17,7 @@ export default function BasicButtons() {
   const MotionButton = motion(Button);
 
   return (
-    <Stack className={classes.container} spacing={2} direction="row">
+    <Stack className={classes.container} spacing={2} direction={{sm:"row", xs:"column"}}>
       <MotionButton
         animate={{
           scale: [0, 1, 2, 1, 1],

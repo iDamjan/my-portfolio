@@ -12,3 +12,9 @@
     margin-top: 60px;
    
 }
+
+@media (max-width:50em) {
+    .container{
+        margin-top: 15px;
+    }
+}
