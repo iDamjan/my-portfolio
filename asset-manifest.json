@@ -1,10 +1,17 @@
 {
   "files": {
-    "main.css": "/my-portfolio/static/css/main.b93ed094.css",
-    "main.js": "/my-portfolio/static/js/main.e53f5a7a.js",
+    "main.css": "/my-portfolio/static/css/main.27098308.css",
+    "main.js": "/my-portfolio/static/js/main.48b2d253.js",
+    "static/media/entertainment-web-app.jpg": "/my-portfolio/static/media/entertainment-web-app.b9f266c7356b604de754.jpg",
     "static/media/me-icon.png": "/my-portfolio/static/media/me-icon.8b283bd3efc5a13acc5a.png",
+    "static/media/food-order-app.jpg": "/my-portfolio/static/media/food-order-app.1dc12289ef109762d8a9.jpg",
+    "static/media/ecommerce-product-page.jpg": "/my-portfolio/static/media/ecommerce-product-page.61aa3f07652f9103c736.jpg",
+    "static/media/countries-info-app.jpg": "/my-portfolio/static/media/countries-info-app.6663f635b6eca1222ba6.jpg",
     "static/media/cv-damjan-stojanovski.pdf": "/my-portfolio/static/media/cv-damjan-stojanovski.f78d1369639fca156ff2.pdf",
+    "static/media/rock-paper-scissors.jpg": "/my-portfolio/static/media/rock-paper-scissors.f88c0e3bf25e4b0bcf9b.jpg",
+    "static/media/planets-fact-site.jpg": "/my-portfolio/static/media/planets-fact-site.2cbefeb63342178f7d8c.jpg",
     "static/media/Background.jpg": "/my-portfolio/static/media/Background.397b41d3a97fde2d3cd5.jpg",
+    "static/media/home-background-mobile.png": "/my-portfolio/static/media/home-background-mobile.9941eb629a0cd4fc4dc8.png",
     "static/media/Background-about-me.jpg": "/my-portfolio/static/media/Background-about-me.32ca2401339eff4d3673.jpg",
     "static/media/background-skills.png": "/my-portfolio/static/media/background-skills.5429d172b772150c536b.png",
     "static/media/arrow-function-hire.svg": "/my-portfolio/static/media/arrow-function-hire.476ac56c3a93cec5507457985269c60d.svg",
@@ -19,11 +26,11 @@
     "static/media/phone-icon.svg": "/my-portfolio/static/media/phone-icon.37acdd9d769fed6da023fc2d5882581c.svg",
     "index.html": "/my-portfolio/index.html",
     "static/media/html-tag.svg": "/my-portfolio/static/media/html-tag.80437cbb18ac480fb84f97bd922bd61e.svg",
-    "main.b93ed094.css.map": "/my-portfolio/static/css/main.b93ed094.css.map",
-    "main.e53f5a7a.js.map": "/my-portfolio/static/js/main.e53f5a7a.js.map"
+    "main.27098308.css.map": "/my-portfolio/static/css/main.27098308.css.map",
+    "main.48b2d253.js.map": "/my-portfolio/static/js/main.48b2d253.js.map"
   },
   "entrypoints": [
-    "static/css/main.b93ed094.css",
-    "static/js/main.e53f5a7a.js"
+    "static/css/main.27098308.css",
+    "static/js/main.48b2d253.js"
   ]
 }
