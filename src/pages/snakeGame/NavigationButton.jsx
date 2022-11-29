@@ -1,4 +1,3 @@
-import { useEffect } from "react";
 import classes from "./SnakeGame.module.scss";
 import Button from "@mui/material/Button";
 import { useNavigate } from "react-router-dom";
