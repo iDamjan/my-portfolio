@@ -3,7 +3,7 @@ export const cardDevSkills = [
     id: "01",
     skill: "HTML",
     content:
-      "Clean and organized HTML content, easy to understand, navigate an refactor the code itself",
+      "Writing clean and organized HTML markup for better readability and search engine performance",
   },
   {
     id: "02",
@@ -15,19 +15,19 @@ export const cardDevSkills = [
     id: "03",
     skill: "JavaScript",
     content:
-      "Clean and organized HTML content, easy to understand, navigate an refactor the code itself",
+      "Writing modern and profesional JS code following the newest ES6 features and functionalities",
   },
   {
     id: "04",
     skill: "ReactJS",
     content:
-      "Clean and organized HTML content, easy to understand, navigate an refactor the code itself",
+      "Using ReactJS library for building composable, optimised and faster user interfaces using reusable UI components ",
   },
   {
     id: "05",
     skill: "TypeScript",
     content:
-      "Clean and organized HTML content, easy to understand, navigate an refactor the code itself",
+      "Using TypeScript for writing slower but more methodical JavaScript code, and preventing common errors during development",
   },
   {
     id: "06",

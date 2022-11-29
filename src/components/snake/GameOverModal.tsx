@@ -25,9 +25,6 @@ export default function GameOverModal({snakeLength}:any) {
 
   return (
     <div>
-      <Button variant="outlined" onClick={handleClickOpen}>
-        Open responsive dialog
-      </Button>
       <Dialog
         fullScreen={fullScreen}
         open={open}
@@ -44,10 +41,10 @@ export default function GameOverModal({snakeLength}:any) {
         </DialogContent>
         <DialogActions>
           <Button autoFocus onClick={handleClose}>
-            Disagree
+            Play Again
           </Button>
           <Button onClick={handleClose} autoFocus>
-            Agree
+            Go to portfolio
           </Button>
         </DialogActions>
       </Dialog>

@@ -8,7 +8,7 @@ import planetsFactSiteImage from '../../static/planets-fact-site.jpg'
 export const projectData = [
     {
         title:"Entertainment Web App",
-        content: "Lizards are a widespread group of squamate reptiles, with over 6,00 species, ranging across all continents except Antarctica",
+        content: "Media website for movies and tv-series with ability to search, navigate and add favorite movies to bookmarks (ReactJS, Typescript)",
         GitHub: "https://github.com/iDamjan/Entertainment-web-app",
         WebPage: "/",
         image: entertainmentWebAppImage,
@@ -16,7 +16,7 @@ export const projectData = [
     },
     {
         title:"Food Order App ",
-        content: "Lizards are a widespread group of squamate reptiles, with over 6,00 species, ranging across all continents except Antarctica",
+        content: "Pratice project with sign up and login form, connected to dummy backend, with functionality for adding and ordering food (ReactJS) ",
         GitHub: "https://github.com/iDamjan/Food-order-app",
         WebPage: "",
         image: foodOrderAppImage,
@@ -25,7 +25,7 @@ export const projectData = [
     },
     {
         title:"Rock-Paper-Scissors Game",
-        content: "Lizards are a widespread group of squamate reptiles, with over 6,00 species, ranging across all continents except Antarctica",
+        content: "Simple rock paper scissors game where the user plays against the computer Maintain the state of the score after refreshing the browser (ReactJS) ",
         GitHub: "https://github.com/iDamjan/Rock-paper-scissors-game",
         WebPage: "",
         image: rockPaperScissorsImage,
@@ -33,7 +33,7 @@ export const projectData = [
     },
     {
         title:"Planets Fact Site",
-        content: "Lizards are a widespread group of squamate reptiles, with over 6,00 species, ranging across all continents except Antarctica",
+        content: "Website for viewing and learning information about the planets, geology and inner planetary structure. (React-router, ReactJS, Typescript)",
         GitHub: "https://github.com/iDamjan/planets-fact-site",
         WebPage: "",
         image:planetsFactSiteImage,
@@ -42,7 +42,7 @@ export const projectData = [
     },
     {
         title:"Countries Info App",
-        content: "Lizards are a widespread group of squamate reptiles, with over 6,00 species, ranging across all continents except Antarctica",
+        content: "Website project for practicing geting data from API and multiple filter functionality, using search & select filter. Darkmode enabled (ReactJS)",
         GitHub: "https://github.com/iDamjan/Countries-Info-App",
         WebPage: "",
         image: countriesInfoAppImage,
@@ -51,7 +51,7 @@ export const projectData = [
     },
     {
         title:"Ecommerce Product Page",
-        content: "Lizards are a widespread group of squamate reptiles, with over 6,00 species, ranging across all continents except Antarctica",
+        content: "Ecommerce Product page build using Vanila JavaScript, with image carousel for mobile version and adding products to cart functionality",
         GitHub: "https://github.com/iDamjan/Ecommerce-Product-page",
         WebPage: "https://idamjan.github.io/Ecommerce-Product-page/",
         image: ecommerceProductPageImage,

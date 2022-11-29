@@ -24,7 +24,6 @@ const initialState = {
   ],
 };
 
-
 class SnakeGame extends Component {
   state = initialState;
 
@@ -131,16 +130,16 @@ class SnakeGame extends Component {
 
   onGameOver() {
     alert(`Game Over. Try Again `);
-    // <Modal snakeLength = {this.state.snakeDots.length}></Modal>
     this.setState(initialState);
   }
 
   render() {
     return (
       <div className= {classes.container}>
+        
         <div className={classes["game-area"]}>
-          <Snake snakeDots={this.state.snakeDots} />
-          <Food dot={this.state.food} />
+          <Snake className = {classes.snake} snakeDots={this.state.snakeDots} />
+          <Food classname = {classes.food} dot={this.state.food} />
         </div>
         <MobileNavigation / >
         <Button href="/home" className={classes.goToPortfolio} variant="outlined">

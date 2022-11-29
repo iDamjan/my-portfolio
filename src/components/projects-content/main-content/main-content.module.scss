@@ -1,13 +1,11 @@
-.container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    max-width: 1200px;
-    flex-wrap: wrap;
-    min-width: none;
-    gap: 25px;
-    
-    flex-shrink: 2;
-   
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  flex-wrap: wrap;
+  min-width: none;
+  gap: 25px;
+  flex-shrink: 2;
 }
