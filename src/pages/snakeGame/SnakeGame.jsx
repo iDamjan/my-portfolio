@@ -5,6 +5,9 @@ import classes from "./SnakeGame.module.scss";
 import Button from "@mui/material/Button";
 import Modal from '../../components/snake/GameOverModal'
 import { MobileNavigation } from "./MobileNavigation";
+import { NavigationButton } from "./NavigationButton";
+
+
 
 const getRandomCoordinates = () => {
   let min = 1;
@@ -26,7 +29,7 @@ const initialState = {
 
 class SnakeGame extends Component {
   state = initialState;
-
+  
 
   componentDidMount() {
     setInterval(this.moveSnake, this.state.speed);
@@ -133,7 +136,10 @@ class SnakeGame extends Component {
     this.setState(initialState);
   }
 
+  
+ 
   render() {
+    
     return (
       <div className= {classes.container}>
         
@@ -142,9 +148,7 @@ class SnakeGame extends Component {
           <Food classname = {classes.food} dot={this.state.food} />
         </div>
         <MobileNavigation / >
-        <Button href="/home" className={classes.goToPortfolio} variant="outlined">
-          Go to Portfolio
-        </Button>
+        <NavigationButton />
       </div>
     );
   }
