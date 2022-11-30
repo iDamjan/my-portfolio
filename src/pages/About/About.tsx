@@ -6,7 +6,6 @@ export default function About() {
     <div
       className={classes.container}
     >
- 
       <MainContent />
     </div>
   );

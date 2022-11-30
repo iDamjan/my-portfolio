@@ -3,14 +3,11 @@ import { SkillDevCard } from "../skill-card/SkillDevCard";
 import classes from "./main-content.module.scss";
 import { cardDevSkills, cardDesignSkills } from "../cardSkills";
 import { SkillDesignCard } from "../skill-card/SkillDesignCard";
-import { motion } from "framer-motion";
+
 
 export const MainContent = () => {
   return (
-    <motion.div
-      initial={{ opacity: 0.1 }}
-      animate={{ opacity: 1}}
-      transition={{ duration: 0.3 }}
+    <div
       className={classes.container}
     >
       {cardDevSkills.map((skill) => {
@@ -32,6 +29,6 @@ export const MainContent = () => {
           />
         );
       })}
-    </motion.div>
+    </div>
   );
 };

@@ -6,7 +6,7 @@ import ArrowFunction from "../../../static/arrow-function-hire.svg";
 import Alert from "@mui/material/Alert";
 import { useState } from "react";
 import ImageDamjan from "../../../static/me-icon.png";
-import { motion } from "framer-motion";
+
 // @ts-ignore
 import cv from "../../../static/cv-damjan-stojanovski.pdf";
 
@@ -47,10 +47,8 @@ const MainContent = () => {
       {copySuccess && (
         <Alert className = {classes.alert} severity="success">Copying to clipboard succsesfull</Alert>
       )}
-      <motion.div
-        initial={{ opacity: 0.1 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 0.3 }}
+      <div
+        
         className={classes.main}
       >
         <img className={classes.personalImage} src={ImageDamjan} alt="Damjan" />
@@ -94,7 +92,7 @@ const MainContent = () => {
           </div>
           <img src={ArrowFunction} alt="Arrow function quote" />
         </div>
-      </motion.div>
+      </div>
     </>
   );
 };

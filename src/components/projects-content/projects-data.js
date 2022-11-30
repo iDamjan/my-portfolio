@@ -10,7 +10,7 @@ export const projectData = [
         title:"Entertainment Web App",
         content: "Media website for movies and tv-series with ability to search, navigate and add favorite movies to bookmarks (ReactJS, Typescript)",
         GitHub: "https://github.com/iDamjan/Entertainment-web-app",
-        WebPage: "/",
+        WebPage: "https://idamjan.github.io/Entertainment-web-app/",
         image: entertainmentWebAppImage,
         mobile: true
     },
