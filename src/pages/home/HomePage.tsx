@@ -1,6 +1,6 @@
-import MainContent from "../../components/homeContent/MainContent";
+import MainContent from "../../components/home-content/MainContent";
 import classes from "./HomePage.module.scss";
-import { ContactIcons } from "../../components/homeContent/contact-icons/ContactIcons";
+import { ContactIcons } from "../../components/home-content/contact-icons/ContactIcons";
 
 export default function HomePage() {
   return (

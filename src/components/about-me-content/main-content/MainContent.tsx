@@ -6,51 +6,22 @@ import ArrowFunction from "../../../static/arrow-function-hire.svg";
 import Alert from "@mui/material/Alert";
 import { useState } from "react";
 import ImageDamjan from "../../../static/me-icon.png";
-
+import { copyEmailHandler } from "./utils/copyEmailHandler";
+import { copyNumberHandler } from "./utils/copyNumberHandler";
 // @ts-ignore
 import cv from "../../../static/cv-damjan-stojanovski.pdf";
 
 const MainContent = () => {
   const [copySuccess, setCopySuccess] = useState<boolean>(false);
 
-  const copyNumberHandler = () => {
-    const number = "+38972307766";
-    navigator.clipboard.writeText(number).then(
-      function () {
-        setCopySuccess(true);
-        setTimeout(() => {
-          setCopySuccess(false);
-        }, 1500);
-      },
-      function (err) {
-        return alert(err + "please try again");
-      }
-    );
-  };
-  const copyEmailHandler = () => {
-    const email = "damjan.stojanovski123@gmail.com";
-    navigator.clipboard.writeText(email).then(
-      function () {
-        setCopySuccess(true);
-        setTimeout(() => {
-          setCopySuccess(false);
-        }, 1500);
-      },
-      function (err) {
-        return alert(err + "please try again");
-      }
-    );
-  };
-
   return (
     <>
       {copySuccess && (
-        <Alert className = {classes.alert} severity="success">Copying to clipboard succsesfull</Alert>
+        <Alert className={classes.alert} severity="success">
+          Copying to clipboard succsesfull
+        </Alert>
       )}
-      <div
-        
-        className={classes.main}
-      >
+      <div className={classes.main}>
         <img className={classes.personalImage} src={ImageDamjan} alt="Damjan" />
         <div className={classes.container}>
           <div className={classes.heading}>
@@ -61,15 +32,21 @@ const MainContent = () => {
           </h3>
           <p>
             Passionate junior front-end developer with a desire to learn and
-            grow in a collaborative team environment. I've always loved working
-            with technology and so over time I've developed a wide variety of
-            skills. Primarily focused on web development and practical knowledge
-            of other technologies, practices, and principles. As a hardworking
-            professional and a cheerful teammate, I believe that a good working
-            atmosphere is a key to a motivated and successful team. My biggest
-            strength is my ability to learn and adapt quickly to new roles.
-            Currently, my work mainly is focused on working with Javascript,
-            ReactJS, Typescript, HTML & CSS, and SASS.
+            grow in a collaborative team environment.
+            <br />
+            I've always loved working with technology and over time I've
+            developed a wide variety of skills.
+            <br />
+            <br />
+            Primarily focused on web development and also have practical
+            knowledge of other technologies, practices, and principles.
+            <br /> As a hardworking professional and a cheerful teammate, I
+            believe that a good working atmosphere is a key to a motivated and
+            successful team. <br />
+            My biggest strength is my ability to learn and adapt quickly to new
+            roles. <br /> <br />
+            Currently, I am mainly focused on working with Javascript, ReactJS,
+            Typescript, HTML & CSS, and SASS.
           </p>
           <div className={classes.flex}>
             <a href={cv} download>
@@ -78,12 +55,18 @@ const MainContent = () => {
               </Button>
             </a>
             <div className={classes.contactContainer}>
-              <div onClick={copyNumberHandler} className={classes.contact}>
+              <div
+                onClick={() => copyNumberHandler(setCopySuccess)}
+                className={classes.contact}
+              >
                 <img src={PhoneIcon} alt="phone icon" />
                 <p>Phone</p>
                 <h5>+38972307766</h5>
               </div>
-              <div onClick={copyEmailHandler} className={classes.contact}>
+              <div
+                onClick={() => copyEmailHandler(setCopySuccess)}
+                className={classes.contact}
+              >
                 <img src={EmailIcon} alt="Email icon" />
                 <p>Email</p>
                 <h5>damjan.stojanovski123@gmail.com</h5>

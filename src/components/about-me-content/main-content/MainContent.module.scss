@@ -52,7 +52,7 @@
     .contactContainer {
       display: flex;
       align-items: center;
-      
+
       gap: 32px;
       margin: 32px 0px;
       width: 100%;
@@ -90,28 +90,27 @@
   }
 }
 
-.alert{
+.alert {
   position: absolute;
   top: 15%;
 }
 
-@media (max-width: 50em){
-
-  .main{
+@media (max-width: 50em) {
+  .main {
     text-align: center;
-    .container{
+    .container {
       margin: 0 32px;
     }
-    .heading{
+    .heading {
       padding: 0;
     }
   }
-.flex{
-  .contactContainer{
-    flex-direction: column;
+  .flex {
+    .contactContainer {
+      flex-direction: column;
+    }
   }
-}
-  .personalImage{
+  .personalImage {
     display: none;
   }
 }

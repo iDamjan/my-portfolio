@@ -1,9 +1,9 @@
-import React from "react";
+import { useState, Fragment } from "react";
 import classes from "./Navbar.module.scss";
 import { Link } from "react-router-dom";
 import Box from "@mui/material/Box";
 import Drawer from "@mui/material/Drawer";
-import {useLocation} from 'react-router-dom'
+import { useLocation } from "react-router-dom";
 import { IconButton, List, ListItem } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
@@ -16,21 +16,20 @@ const pages = [
 ];
 
 export const MobileDrawer = () => {
-  const [mobileOpen, setMobileOpen] = React.useState(false);
+  const [mobileOpen, setMobileOpen] = useState(false);
   const location = useLocation();
   const { pathname } = location;
-
-  const handleDrawerToggle = () => {
-    setMobileOpen(!mobileOpen);
-  };
 
   const drawer = (
     <>
       <div style={{ display: "flex", justifyContent: "flex-end" }}>
-        <CloseIcon sx = {{margin:"15px",fill:"white"}} onClick={handleDrawerToggle} />
+        <CloseIcon
+          sx={{ margin: "15px", fill: "white" }}
+          onClick={() => setMobileOpen(!mobileOpen)}
+        />
       </div>
       <Box
-        onClick={handleDrawerToggle}
+        onClick={() => setMobileOpen(!mobileOpen)}
         sx={{ textAlign: "center" }}
         style={{ display: "grid", justifyContent: "center" }}
       >
@@ -69,17 +68,17 @@ export const MobileDrawer = () => {
         <IconButton
           color="inherit"
           aria-label="open drawer"
-          onClick={handleDrawerToggle}
+          onClick={() => setMobileOpen(!mobileOpen)}
           edge="start"
         >
           <MenuIcon sx={{ fill: "white" }} />
         </IconButton>
       </Box>
-      <React.Fragment key="right">
+      <Fragment key="right">
         <Drawer
           anchor="right"
           open={mobileOpen}
-          onClose={handleDrawerToggle}
+          onClose={() => setMobileOpen(!mobileOpen)}
           ModalProps={{
             keepMounted: true,
           }}
@@ -95,7 +94,7 @@ export const MobileDrawer = () => {
         >
           {drawer}
         </Drawer>
-      </React.Fragment>
+      </Fragment>
     </div>
   );
 };

@@ -5,17 +5,9 @@ import { useNavigate } from "react-router-dom";
 export const NavigationButton = () => {
   const navigate = useNavigate();
 
-  const navigateHandler = () => {
-    navigate("/home");
-  };
-
   return (
     <div className={classes.navigationButton}>
-      <Button
-        onClick={navigateHandler}
-        
-        variant="outlined"
-      >
+      <Button onClick={() => navigate("/home")} variant="outlined">
         Go to Portfolio
       </Button>
     </div>

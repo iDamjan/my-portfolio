@@ -9,7 +9,8 @@ import CircularProgress from "@mui/material/CircularProgress";
 import Box from "@mui/material/Box";
 
 const EmailModalForm = ({ setOpen, setPopupMessage }: Props) => {
-  const form: any = useRef();
+  
+  const form:any = useRef();
 
   const [isLoading, setIsLoading] = useState(false);
 

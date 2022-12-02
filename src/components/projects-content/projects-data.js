@@ -18,7 +18,7 @@ export const projectData = [
         title:"Food Order App ",
         content: "Pratice project with sign up and login form, connected to dummy backend, with functionality for adding and ordering food (ReactJS) ",
         GitHub: "https://github.com/iDamjan/Food-order-app",
-        WebPage: "",
+        WebPage: "https://idamjan.github.io/Food-order-app/",
         image: foodOrderAppImage,
         mobile:false
 
@@ -27,7 +27,7 @@ export const projectData = [
         title:"Rock-Paper-Scissors Game",
         content: "Simple rock paper scissors game where the user plays against the computer Maintain the state of the score after refreshing the browser (ReactJS) ",
         GitHub: "https://github.com/iDamjan/Rock-paper-scissors-game",
-        WebPage: "",
+        WebPage: "https://idamjan.github.io/Rock-paper-scissors-game/",
         image: rockPaperScissorsImage,
         mobile:true
     },
@@ -35,7 +35,7 @@ export const projectData = [
         title:"Planets Fact Site",
         content: "Website for viewing and learning information about the planets, geology and inner planetary structure. (React-router, ReactJS, Typescript)",
         GitHub: "https://github.com/iDamjan/planets-fact-site",
-        WebPage: "",
+        WebPage: "https://idamjan.github.io/planets-fact-site/",
         image:planetsFactSiteImage,
         mobile:true
 
@@ -44,7 +44,7 @@ export const projectData = [
         title:"Countries Info App",
         content: "Website project for practicing geting data from API and multiple filter functionality, using search & select filter. Darkmode enabled (ReactJS)",
         GitHub: "https://github.com/iDamjan/Countries-Info-App",
-        WebPage: "",
+        WebPage: "https://idamjan.github.io/countries-info-app/",
         image: countriesInfoAppImage,
         mobile:true
 

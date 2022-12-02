@@ -26,3 +26,14 @@ export interface PopupMessage {
   messageSuccess: boolean;
   severity: any;
 }
+
+export interface emailModalProps {
+  open: boolean;
+  handleClose: () => void;
+  setOpen: (value: boolean) => void;
+  setPopupMessage: (value: {
+    message: string;
+    messageSuccess: boolean;
+    severity: string;
+  }) => void;
+}

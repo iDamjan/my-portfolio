@@ -17,6 +17,7 @@ export default function ProjectCard({
   webpage,
   mobile,
 }: ProjectsDataTypes) {
+  
   return (
     <Card className={classes.container} sx={{ maxWidth: 345 }}>
       <CardMedia component="img" alt={title} height="150" image={image} />
@@ -37,10 +38,10 @@ export default function ProjectCard({
         </div>
       </CardContent>
       <CardActions className={classes.actions} sx={{ padding: "16px" }}>
-        <a target = "_blank" href={webpage}>
+        <a target="_blank" href={webpage}>
           <Button size="medium">Website</Button>
         </a>
-        <a target = "_blank" href={github}>
+        <a target="_blank" href={github}>
           <Button size="medium">GitHub</Button>
         </a>
       </CardActions>

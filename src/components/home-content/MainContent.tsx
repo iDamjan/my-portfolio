@@ -2,7 +2,7 @@ import classes from "./MainContent.module.scss";
 import Button from "@mui/material/Button";
 import OpenHtmlTag from "../../static/OpenHtmlTag.svg";
 import CloseHtmlTag from "../../static/CloseHtmlTag.svg";
-import EmailModal from "./EmailModal/EmailModal";
+import EmailModal from "./email-modal/EmailModal";
 import { useState } from "react";
 import Alert from "@mui/material/Alert";
 import {PopupMessage} from './types'

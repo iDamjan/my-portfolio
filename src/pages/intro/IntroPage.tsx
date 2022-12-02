@@ -7,13 +7,6 @@ import { motion } from "framer-motion";
 export default function BasicButtons() {
   const navigate = useNavigate();
 
-  const goToHome = () => {
-    navigate("/home");
-  };
-  const goToSnake = () => {
-    navigate("/snakeGame");
-  };
-
   const MotionButton = motion(Button);
 
   return (
@@ -29,7 +22,7 @@ export default function BasicButtons() {
           ease: "easeInOut",
           times: [0, 0.2, 0.5, 0.8, 1],
         }}
-        onClick={goToSnake}
+        onClick={() => navigate("/snakeGame")}
         className={classes.snake}
         variant="contained"
       >
@@ -47,7 +40,7 @@ export default function BasicButtons() {
           ease: "easeInOut",
           times: [0, 0.2, 0.5, 0.8, 1],
         }}
-        onClick={goToHome}
+        onClick={() => navigate("/home")}
         className={classes.portfolio}
         variant="outlined"
       >
