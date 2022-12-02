@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/my-portfolio/static/css/main.46d5e784.css",
-    "main.js": "/my-portfolio/static/js/main.13e9d126.js",
+    "main.css": "/my-portfolio/static/css/main.987f3e50.css",
+    "main.js": "/my-portfolio/static/js/main.d0005a38.js",
     "static/media/entertainment-web-app.jpg": "/my-portfolio/static/media/entertainment-web-app.b9f266c7356b604de754.jpg",
     "static/media/me-icon.png": "/my-portfolio/static/media/me-icon.8b283bd3efc5a13acc5a.png",
     "static/media/food-order-app.jpg": "/my-portfolio/static/media/food-order-app.1dc12289ef109762d8a9.jpg",
@@ -12,8 +12,8 @@
     "static/media/planets-fact-site.jpg": "/my-portfolio/static/media/planets-fact-site.2cbefeb63342178f7d8c.jpg",
     "static/media/Background.jpg": "/my-portfolio/static/media/Background.397b41d3a97fde2d3cd5.jpg",
     "static/media/home-background-mobile.png": "/my-portfolio/static/media/home-background-mobile.9941eb629a0cd4fc4dc8.png",
+    "static/media/background-skills.jpg": "/my-portfolio/static/media/background-skills.1e614d9aae6a59927b6b.jpg",
     "static/media/Background-about-me.jpg": "/my-portfolio/static/media/Background-about-me.32ca2401339eff4d3673.jpg",
-    "static/media/background-skills.png": "/my-portfolio/static/media/background-skills.5429d172b772150c536b.png",
     "static/media/arrow-function-hire.svg": "/my-portfolio/static/media/arrow-function-hire.476ac56c3a93cec5507457985269c60d.svg",
     "static/media/OpenHtmlTag.svg": "/my-portfolio/static/media/OpenHtmlTag.a3f326eaa0dff63ec4faf2434c6dad48.svg",
     "static/media/CloseHtmlTag.svg": "/my-portfolio/static/media/CloseHtmlTag.7e14a5a9a80a2f5c12d1c49a2caca8d1.svg",
@@ -26,11 +26,11 @@
     "static/media/phone-icon.svg": "/my-portfolio/static/media/phone-icon.37acdd9d769fed6da023fc2d5882581c.svg",
     "index.html": "/my-portfolio/index.html",
     "static/media/html-tag.svg": "/my-portfolio/static/media/html-tag.80437cbb18ac480fb84f97bd922bd61e.svg",
-    "main.46d5e784.css.map": "/my-portfolio/static/css/main.46d5e784.css.map",
-    "main.13e9d126.js.map": "/my-portfolio/static/js/main.13e9d126.js.map"
+    "main.987f3e50.css.map": "/my-portfolio/static/css/main.987f3e50.css.map",
+    "main.d0005a38.js.map": "/my-portfolio/static/js/main.d0005a38.js.map"
   },
   "entrypoints": [
-    "static/css/main.46d5e784.css",
-    "static/js/main.13e9d126.js"
+    "static/css/main.987f3e50.css",
+    "static/js/main.d0005a38.js"
   ]
 }
