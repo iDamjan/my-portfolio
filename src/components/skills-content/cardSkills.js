@@ -33,7 +33,7 @@ export const cardDevSkills = [
     id: "06",
     skill: "NextJS",
     content:
-      "Clean and organized HTML content, easy to understand, navigate an refactor the code itself",
+      "Using Next.js enforces more structure and gives the developer additional capabilities: like server-side rendering, routing, bundling, and more",
    
   },
 ];
